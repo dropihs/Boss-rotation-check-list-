@@ -1,0 +1,8 @@
+
+<div>{{display | date :"HH:mm:ss":'UTC'}}</div>
+<button (click)="start()" *ngIf="!active">Start</button>
+<button (click)="pause()" *ngIf="active && !paused">Pause</button>
+<button (click)="resume()" *ngIf="active && paused">Resume</button>
+<button (click)="stop()" *ngIf="active">Stop</button>
+
+<app-bosses-component></app-bosses-component>
